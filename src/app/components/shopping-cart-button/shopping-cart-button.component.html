@@ -1,0 +1,5 @@
+
+<div class="cart-button-container">
+    <button class="cart-button" (click)="toggleShoppingCartpopup()">Cart ({{ cartItems.length }})</button>
+</div>
+<app-shopping-cart-popup *ngIf="isCartPopupVisible" (close)="toggleShoppingCartpopup()"></app-shopping-cart-popup>

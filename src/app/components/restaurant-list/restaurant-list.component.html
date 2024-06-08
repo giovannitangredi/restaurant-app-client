@@ -1,0 +1,11 @@
+<section class="container">
+    <div class="card restaurant-card" *ngFor="let restaurant of restaurantList" (click)="clickOnRestaurantCard(restaurant.id)">
+        <div  class="card-body" >
+            <p class="card-title restaurant-name">{{restaurant.name}}</p>
+            <p class="card-text restaurant-address">{{restaurant.address}}</p>
+            <div class="restaurant-categories" *ngFor="let category of restaurant.categories">
+                <span class="badge badge-success category-badge">{{category}}</span>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+.menu-container {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 1rem;
+
+    .card-body {
+        width: 100%;
+    }
+
+    .menu-item {
+        display: flex;
+        width: 25%;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        align-items: center;
+        justify-content: space-between;
+        
+        .menu-footer {
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+            align-items: start;
+            justify-content: space-between;
+            
+            .price {
+                font-size: larger;
+                text-align: left;
+            }
+        }
+       
+    }
+
+}

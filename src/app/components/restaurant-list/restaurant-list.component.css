@@ -1,0 +1,21 @@
+.container {
+    width: 90%;
+    display: flex;
+}
+
+.restaurant-card {
+    width: 33%;
+
+    .restaurant-name {
+        font-size: x-large;
+        font-weight: bold;
+    }
+    
+    .category-badge {
+        color: black;
+        background-color: chartreuse;
+        border-radius: 33%;
+        text-align: center;
+        justify-content: center;
+    }
+}

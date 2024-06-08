@@ -1,0 +1,18 @@
+<h1>{{restaurant.name}}</h1>
+
+<section class="container menu-container">
+    <div class="card menu-item" *ngFor="let menu of menus">
+        <div  class="card-body" >
+            <div class="info">
+                <p class="card-title restaurant-name">{{menu.name}}</p>
+                <p class="card-text menu-description">{{menu.description}}</p>
+                <p class="menu-ingridients">{{menu.ingredients}}</p>
+            </div>
+            <div class="menu-footer">
+                <div class="price">$ {{menu.price}}</div>
+                <button type="button" class="btn btn-primary add-cart-btn" (click)="openModal(menu)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    
+</section>

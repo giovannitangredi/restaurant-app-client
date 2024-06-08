@@ -1,0 +1,9 @@
+<div class="cart-popup">
+    <h2>Shopping Cart</h2>
+    <ul>
+      <li *ngFor="let item of items">
+        {{ item.getMenu.name }} - {{ item.getQuantity }} x {{ item.getMenu.price }}
+      </li>
+    </ul>
+    <button (click)="closePopup()">Close</button>
+  </div>

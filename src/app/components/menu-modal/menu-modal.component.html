@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{menu.name}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+    <div class="menu-ingridients-list">
+        <h2>Ingredients</h2>
+      <ul>
+        <li *ngFor="let ingredient of menu.ingredients">{{ingredient}}</li>
+      </ul>
+    </div>
+    <div class="user-panel">
+        <label for="user-note">Add Notes:</label>
+        <textarea type="text" name="user-note" class="user-note" [formControl]="userNote" ></textarea>
+    </div>
+    
+</div>
+<div class="modal-footer">
+    <app-counter [counterId]="'counter-modal'" (valueEmitter)="getCounterValue($event)"></app-counter>
+    <button type="button" class="btn btn-primary" (click)="submitModal()" >{{submitText}}</button>
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>
